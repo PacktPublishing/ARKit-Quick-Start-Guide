@@ -1,2 +1,1 @@
-# ARKit-Quick-Start-Guide
-Published by Packt
+# Hands-On Augmented Reality with ARKit
