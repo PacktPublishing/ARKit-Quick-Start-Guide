@@ -26,29 +26,12 @@ class ARSessionManager: NSObject {
 extension ARSessionManager: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for
         anchor: ARAnchor) {
-//        if anchor.name == "box" {
-//            let boxGeometry = SCNBox(width: 0.10, height: 0.20, length: 0.30, chamferRadius: 0.01)
-//            boxGeometry.firstMaterial?.diffuse.contents = UIColor.green
-//            let boxNode = SCNNode(geometry: boxGeometry)
-//            node.addChildNode(boxNode)
-//        }
-        //        let boxGeometry = SCNBox(width: 0.10, height: 0.10, length: 0.10, chamferRadius: 0.01)
-        //        boxGeometry.firstMaterial?.diffuse.contents = .red
-        //        let boxNode = SCNNode(geometry: boxGeometry)
-        //        planeNode.position = self.position(from: anchor)
-
-        //        let centerX = anchor.center.x
-        //        let centerZ = anchor.center.z
-        //        return SCNVector3Make(centerX, -0.55, centerZ)
-
-        //        DispatchQueue.main.async {
-        //            if let planeAnchor = anchor as? ARPlaneAnchor {
-        //                let newNode = PlaneGenerator.getPlane(from: planeAnchor)
-        //                node.addChildNode(newNode)
-        //                self.delegate?.planeNode(is: true, planeAnchor:
-        //                    planeAnchor)
-        //            }
-        //        }
+        if anchor.name == "box" {
+            let boxGeometry = SCNBox(width: 0.10, height: 0.10, length: 0.10, chamferRadius: 0.01)
+            boxGeometry.firstMaterial?.diffuse.contents = UIColor.green
+            let boxNode = SCNNode(geometry: boxGeometry)
+            node.addChildNode(boxNode)
+        }
     }
 }
 

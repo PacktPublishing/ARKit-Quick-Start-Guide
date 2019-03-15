@@ -32,7 +32,10 @@ class ViewController: UIViewController {
         ]
 
         sceneView.scene = SCNScene()
-        setupStaticScene()
+//        setupStaticScene()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.setupAnchorScene()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -60,5 +63,19 @@ private extension ViewController {
         let boxNode = SCNNode(geometry: boxGeometry)
         boxNode.position = SCNVector3(0, 0, -1) // 1 meter in front
         sceneView.scene.rootNode.addChildNode(boxNode)
+    }
+
+    func setupAnchorScene() {
+        guard let currentFrame = sceneView.session.currentFrame else {
+            return
+        }
+
+        var translation = matrix_identity_float4x4
+        translation.columns.3.z = -1
+
+        let transform = currentFrame.camera.transform * translation
+
+        let anchor = ARAnchor(name: "box", transform: transform)
+        sceneView.session.add(anchor: anchor)
     }
 }
