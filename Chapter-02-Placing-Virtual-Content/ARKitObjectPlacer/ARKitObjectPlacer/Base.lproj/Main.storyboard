@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="ARKitObjectPlacer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPP-OC-QFY" userLabel="MessageLabel">
+                                <rect key="frame" x="24" y="44" width="327" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IhT-tQ-Ntj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xPP-OC-QFY" secondAttribute="trailing" id="G8z-iG-eI8"/>
+                            <constraint firstItem="xPP-OC-QFY" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="Gnx-fh-YjX"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="xPP-OC-QFY" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" constant="24" id="amA-DU-KVH"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="xPP-OC-QFY" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" constant="24" id="txb-7y-sfg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="stateLabel" destination="xPP-OC-QFY" id="wD7-7X-QbX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
