@@ -32,6 +32,7 @@ class ViewController: UIViewController {
         ]
 
         sceneView.scene = SCNScene()
+        setupStaticScene()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -49,5 +50,15 @@ class ViewController: UIViewController {
 extension ViewController: ARSessionManagerDelegate {
     func update(current trackingState: String) {
         stateLabel.text = trackingState
+    }
+}
+
+private extension ViewController {
+    func setupStaticScene() {
+        let boxGeometry = SCNBox(width: 0.10, height: 0.10, length: 0.10, chamferRadius: 0.01)
+        boxGeometry.firstMaterial?.diffuse.contents = UIColor.red
+        let boxNode = SCNNode(geometry: boxGeometry)
+        boxNode.position = SCNVector3(0, 0, -1) // 1 meter in front
+        sceneView.scene.rootNode.addChildNode(boxNode)
     }
 }
