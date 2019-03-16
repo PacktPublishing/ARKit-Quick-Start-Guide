@@ -109,10 +109,3 @@ extension matrix_float4x4 {
         return SCNVector3Make(columns.3.x, columns.3.y, columns.3.z)
     }
 }
-
-
-override func viewDidLoad() {
-    // ...
-    sceneView.scene = SCNScene()
-    setupStaticScene()
-}
