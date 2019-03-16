@@ -33,9 +33,10 @@ class ViewController: UIViewController {
 
         sceneView.scene = SCNScene()
 //        setupStaticScene()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.setupAnchorScene()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+//            self.setupAnchorScene()
+//        }
+        setupTapRecognizer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,4 +79,40 @@ private extension ViewController {
         let anchor = ARAnchor(name: "box", transform: transform)
         sceneView.session.add(anchor: anchor)
     }
+
+    func setupTapRecognizer() {
+        let tapRecognizer = UITapGestureRecognizer(target: self, action:
+            #selector(handleTap))
+        sceneView.addGestureRecognizer(tapRecognizer)
+    }
+
+    @objc
+    func handleTap(sender: UITapGestureRecognizer) {
+        let tapLocation = sender.location(in: sceneView)
+        let hitTest = sceneView.hitTest(tapLocation, types: .featurePoint)
+        guard let firstHit = hitTest.first else {
+            return
+        }
+
+        let position = firstHit.worldTransform.position
+        let geometry = SCNSphere(radius: 0.05)
+        geometry.firstMaterial?.diffuse.contents = UIColor.yellow
+        let sphereNode = SCNNode(geometry: geometry)
+        sphereNode.position = position
+
+        sceneView.scene.rootNode.addChildNode(sphereNode)
+    }
+}
+
+extension matrix_float4x4 {
+    var position: SCNVector3 {
+        return SCNVector3Make(columns.3.x, columns.3.y, columns.3.z)
+    }
+}
+
+
+override func viewDidLoad() {
+    // ...
+    sceneView.scene = SCNScene()
+    setupStaticScene()
 }
