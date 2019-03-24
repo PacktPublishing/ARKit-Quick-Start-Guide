@@ -13,6 +13,7 @@ import ARKit
 
 extension ARPlaneAnchor {
     var width: Float { return self.extent.x }
+    var height: Float { return self.extent.z }
     var length: Float { return self.extent.z }
 }
 
@@ -35,7 +36,7 @@ class HorizontalPlane: SCNNode {
         planeGeometry.materials = [material]
         let planeNode = SCNNode(geometry: planeGeometry)
 
-        planeNode.position = SCNVector3Make(anchor.center.x, 0, anchor.center.z);
+        planeNode.position = SCNVector3Make(anchor.center.x, anchor.center.y, anchor.center.z);
         planeNode.eulerAngles.x = -.pi / 2
         addChildNode(planeNode)
     }
@@ -52,6 +53,6 @@ class HorizontalPlane: SCNNode {
         let planeGeometry = node?.geometry as? SCNPlane
         planeGeometry?.width = CGFloat(anchor.width)
         planeGeometry?.height = CGFloat(anchor.length)
-        node?.position = SCNVector3Make(anchor.center.x, 0, anchor.center.z);
+        node?.position = SCNVector3Make(anchor.center.x, anchor.center.y, anchor.center.z);
     }
 }
