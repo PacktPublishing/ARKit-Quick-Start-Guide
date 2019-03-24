@@ -13,7 +13,6 @@ import ARKit
 
 extension ARPlaneAnchor {
     var width: Float { return self.extent.x }
-    var height: Float { return self.extent.z }
     var length: Float { return self.extent.z }
 }
 

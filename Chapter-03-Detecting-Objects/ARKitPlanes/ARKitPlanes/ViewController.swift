@@ -42,20 +42,26 @@ class ViewController: UIViewController {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
     }
-
 }
 
 // MARK: - ARSCNViewDelegate
 extension ViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let plane = (HorizontalPlane(anchor: anchor) ?? VerticalPlane(anchor: anchor)) {
+        if let plane = node.childNodes.first as? HorizontalPlane {
+            node.addChildNode(plane)
+        }
+        if let plane = node.childNodes.first as? VerticalPlane {
             node.addChildNode(plane)
         }
     }
 
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
 
-        let plane = node.childNodes.first as? HorizontalPlane
-        plane?.update(anchor: anchor)
+        if let plane = node.childNodes.first as? HorizontalPlane {
+            plane.update(anchor: anchor)
+        }
+        if let plane = node.childNodes.first as? VerticalPlane {
+            plane.update(anchor: anchor)
+        }
     }
 }

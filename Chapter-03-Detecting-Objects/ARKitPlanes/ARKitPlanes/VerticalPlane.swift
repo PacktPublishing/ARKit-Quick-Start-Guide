@@ -21,8 +21,7 @@ class VerticalPlane: SCNNode {
         super.init()
 
         let planeGeometry = SCNPlane(width: CGFloat(anchor.width),
-                                     height: CGFloat(anchor.height))
-
+                                     height: CGFloat(anchor.length))
         let material = SCNMaterial()
 
         material.diffuse.contents = UIImage(named:"vertical_grid.png")
@@ -32,7 +31,7 @@ class VerticalPlane: SCNNode {
 
         planeNode.position = SCNVector3Make(anchor.center.x, anchor.center.y, anchor.center.z);
         planeNode.eulerAngles.x = -.pi / 2
-        
+
         addChildNode(planeNode)
     }
 
@@ -47,7 +46,7 @@ class VerticalPlane: SCNNode {
         let node = self.childNodes.first
         let planeGeometry = node?.geometry as? SCNPlane
         planeGeometry?.width = CGFloat(anchor.width)
-        planeGeometry?.height = CGFloat(anchor.height)
+        planeGeometry?.height = CGFloat(anchor.length)
         node?.position = SCNVector3Make(anchor.center.x, anchor.center.y, anchor.center.z);
     }
 }
