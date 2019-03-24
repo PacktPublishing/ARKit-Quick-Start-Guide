@@ -47,10 +47,10 @@ class ViewController: UIViewController {
 // MARK: - ARSCNViewDelegate
 extension ViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let plane = node.childNodes.first as? HorizontalPlane {
+        if let plane = HorizontalPlane(anchor: anchor) {
             node.addChildNode(plane)
         }
-        if let plane = node.childNodes.first as? VerticalPlane {
+        if let plane = VerticalPlane(anchor: anchor) {
             node.addChildNode(plane)
         }
     }
