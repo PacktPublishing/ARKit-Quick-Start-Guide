@@ -33,7 +33,8 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         
         let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = [.horizontal]
+        configuration.planeDetection = [.horizontal, .vertical]
+
         sceneView.session.run(configuration)
     }
     
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
 // MARK: - ARSCNViewDelegate
 extension ViewController: ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let plane = HorizontalPlane(anchor: anchor) {
+        if let plane = (HorizontalPlane(anchor: anchor) ?? VerticalPlane(anchor: anchor)) {
             node.addChildNode(plane)
         }
     }

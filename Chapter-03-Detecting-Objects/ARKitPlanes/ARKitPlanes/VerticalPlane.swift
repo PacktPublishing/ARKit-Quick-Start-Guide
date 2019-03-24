@@ -1,5 +1,5 @@
 //
-//  HorizontalPlane.swift
+//  VerticalPlane.swift
 //  ARKitPlanes
 //
 //  Created by Giordano Scalzo on 24/03/2019.
@@ -10,35 +10,29 @@ import Foundation
 import SceneKit
 import ARKit
 
-
-extension ARPlaneAnchor {
-    var width: Float { return self.extent.x }
-    var height: Float { return self.extent.z }
-    var length: Float { return self.extent.z }
-}
-
-class HorizontalPlane: SCNNode {
+class VerticalPlane: SCNNode {
 
     init?(anchor: ARAnchor?) {
         guard let anchor = anchor as? ARPlaneAnchor,
-            anchor.alignment == .horizontal else {
+            anchor.alignment == .vertical else {
             return nil
         }
 
         super.init()
 
         let planeGeometry = SCNPlane(width: CGFloat(anchor.width),
-                                     height: CGFloat(anchor.length))
+                                     height: CGFloat(anchor.height))
 
         let material = SCNMaterial()
 
-        material.diffuse.contents = UIImage(named:"horizontal_grid.png")
+        material.diffuse.contents = UIImage(named:"vertical_grid.png")
 
         planeGeometry.materials = [material]
         let planeNode = SCNNode(geometry: planeGeometry)
 
         planeNode.position = SCNVector3Make(anchor.center.x, anchor.center.y, anchor.center.z);
         planeNode.eulerAngles.x = -.pi / 2
+        
         addChildNode(planeNode)
     }
 
@@ -53,7 +47,7 @@ class HorizontalPlane: SCNNode {
         let node = self.childNodes.first
         let planeGeometry = node?.geometry as? SCNPlane
         planeGeometry?.width = CGFloat(anchor.width)
-        planeGeometry?.height = CGFloat(anchor.length)
+        planeGeometry?.height = CGFloat(anchor.height)
         node?.position = SCNVector3Make(anchor.center.x, anchor.center.y, anchor.center.z);
     }
 }

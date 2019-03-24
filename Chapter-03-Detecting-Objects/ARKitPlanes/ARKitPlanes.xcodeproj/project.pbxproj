@@ -14,6 +14,7 @@
 		A6AC70FF2247CC9D00FD3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC70FE2247CC9D00FD3740 /* Assets.xcassets */; };
 		A6AC71022247CC9D00FD3740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71002247CC9D00FD3740 /* LaunchScreen.storyboard */; };
 		A6AC710C2247CF4F00FD3740 /* HorizontalPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC710B2247CF4F00FD3740 /* HorizontalPlane.swift */; };
+		A6AC710E2247DAEA00FD3740 /* VerticalPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC710D2247DAE900FD3740 /* VerticalPlane.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A6AC71012247CC9D00FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6AC71032247CC9D00FD3740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6AC710B2247CF4F00FD3740 /* HorizontalPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPlane.swift; sourceTree = "<group>"; };
+		A6AC710D2247DAE900FD3740 /* VerticalPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalPlane.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				A6AC70F52247CC9B00FD3740 /* AppDelegate.swift */,
 				A6AC710B2247CF4F00FD3740 /* HorizontalPlane.swift */,
+				A6AC710D2247DAE900FD3740 /* VerticalPlane.swift */,
 				A6AC70F72247CC9B00FD3740 /* art.scnassets */,
 				A6AC70F92247CC9B00FD3740 /* ViewController.swift */,
 				A6AC70FB2247CC9B00FD3740 /* Main.storyboard */,
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AC710E2247DAEA00FD3740 /* VerticalPlane.swift in Sources */,
 				A6AC70FA2247CC9B00FD3740 /* ViewController.swift in Sources */,
 				A6AC710C2247CF4F00FD3740 /* HorizontalPlane.swift in Sources */,
 				A6AC70F62247CC9B00FD3740 /* AppDelegate.swift in Sources */,
