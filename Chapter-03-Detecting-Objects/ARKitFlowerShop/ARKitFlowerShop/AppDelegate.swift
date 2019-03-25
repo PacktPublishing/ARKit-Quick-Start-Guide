@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ARKitObjectTracker
+//  ARKitFlowerShop
 //
-//  Created by Giordano Scalzo on 24/03/2019.
+//  Created by Giordano Scalzo on 25/03/2019.
 //  Copyright © 2019 Giordano Scalzo. All rights reserved.
 //
 

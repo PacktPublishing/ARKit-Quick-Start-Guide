@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  ARKitObjectTracker
+//  ARKitFlowerShop
 //
-//  Created by Giordano Scalzo on 24/03/2019.
+//  Created by Giordano Scalzo on 25/03/2019.
 //  Copyright © 2019 Giordano Scalzo. All rights reserved.
 //
 
@@ -13,24 +13,24 @@ import ARKit
 class ViewController: UIViewController {
 
     @IBOutlet var sceneView: ARSCNView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         sceneView.delegate = self
         sceneView.showsStatistics = true
-        
+
         let scene = SCNScene()
         sceneView.scene = scene
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
-        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "ARKitObjects", bundle: Bundle.main)!
+        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "References", bundle: Bundle.main)!
 
         sceneView.session.run(configuration)
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()

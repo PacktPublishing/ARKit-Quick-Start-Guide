@@ -7,29 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6AC716022484BB500FD3740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC715F22484BB500FD3740 /* AppDelegate.swift */; };
-		A6AC716222484BB500FD3740 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC716122484BB500FD3740 /* art.scnassets */; };
-		A6AC716422484BB500FD3740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC716322484BB500FD3740 /* ViewController.swift */; };
-		A6AC716722484BB500FD3740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC716522484BB500FD3740 /* Main.storyboard */; };
-		A6AC716922484BB600FD3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC716822484BB600FD3740 /* Assets.xcassets */; };
-		A6AC716C22484BB600FD3740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC716A22484BB600FD3740 /* LaunchScreen.storyboard */; };
-		A6AC71742248526300FD3740 /* FlowerLabels.sks in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71732248526300FD3740 /* FlowerLabels.sks */; };
+		A6AC71A4224975D800FD3740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC71A3224975D800FD3740 /* AppDelegate.swift */; };
+		A6AC71A6224975D900FD3740 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71A5224975D900FD3740 /* art.scnassets */; };
+		A6AC71A8224975D900FD3740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC71A7224975D900FD3740 /* ViewController.swift */; };
+		A6AC71AB224975D900FD3740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71A9224975D900FD3740 /* Main.storyboard */; };
+		A6AC71AD224975D900FD3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71AC224975D900FD3740 /* Assets.xcassets */; };
+		A6AC71B0224975D900FD3740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71AE224975D900FD3740 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A6AC715C22484BB500FD3740 /* ARKitObjectTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitObjectTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6AC715F22484BB500FD3740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6AC716122484BB500FD3740 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		A6AC716322484BB500FD3740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A6AC716622484BB500FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A6AC716822484BB600FD3740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6AC716B22484BB600FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A6AC716D22484BB600FD3740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6AC71732248526300FD3740 /* FlowerLabels.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlowerLabels.sks; sourceTree = "<group>"; };
+		A6AC71A0224975D800FD3740 /* ARKitFlowerShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitFlowerShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6AC71A3224975D800FD3740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6AC71A5224975D900FD3740 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A6AC71A7224975D900FD3740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6AC71AA224975D900FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6AC71AC224975D900FD3740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6AC71AF224975D900FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6AC71B1224975D900FD3740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6AC71B7224975E800FD3740 /* FlowerLabels.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = FlowerLabels.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A6AC715922484BB500FD3740 /* Frameworks */ = {
+		A6AC719D224975D800FD3740 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,73 +38,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6AC715322484BB500FD3740 = {
+		A6AC7197224975D800FD3740 = {
 			isa = PBXGroup;
 			children = (
-				A6AC715E22484BB500FD3740 /* ARKitObjectTracker */,
-				A6AC715D22484BB500FD3740 /* Products */,
+				A6AC71A2224975D800FD3740 /* ARKitFlowerShop */,
+				A6AC71A1224975D800FD3740 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A6AC715D22484BB500FD3740 /* Products */ = {
+		A6AC71A1224975D800FD3740 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6AC715C22484BB500FD3740 /* ARKitObjectTracker.app */,
+				A6AC71A0224975D800FD3740 /* ARKitFlowerShop.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6AC715E22484BB500FD3740 /* ARKitObjectTracker */ = {
+		A6AC71A2224975D800FD3740 /* ARKitFlowerShop */ = {
 			isa = PBXGroup;
 			children = (
-				A6AC715F22484BB500FD3740 /* AppDelegate.swift */,
-				A6AC716122484BB500FD3740 /* art.scnassets */,
-				A6AC716322484BB500FD3740 /* ViewController.swift */,
-				A6AC71732248526300FD3740 /* FlowerLabels.sks */,
-				A6AC716522484BB500FD3740 /* Main.storyboard */,
-				A6AC716822484BB600FD3740 /* Assets.xcassets */,
-				A6AC716A22484BB600FD3740 /* LaunchScreen.storyboard */,
-				A6AC716D22484BB600FD3740 /* Info.plist */,
+				A6AC71B7224975E800FD3740 /* FlowerLabels.sks */,
+				A6AC71A7224975D900FD3740 /* ViewController.swift */,
+				A6AC71A3224975D800FD3740 /* AppDelegate.swift */,
+				A6AC71A5224975D900FD3740 /* art.scnassets */,
+				A6AC71A9224975D900FD3740 /* Main.storyboard */,
+				A6AC71AC224975D900FD3740 /* Assets.xcassets */,
+				A6AC71AE224975D900FD3740 /* LaunchScreen.storyboard */,
+				A6AC71B1224975D900FD3740 /* Info.plist */,
 			);
-			path = ARKitObjectTracker;
+			path = ARKitFlowerShop;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6AC715B22484BB500FD3740 /* ARKitObjectTracker */ = {
+		A6AC719F224975D800FD3740 /* ARKitFlowerShop */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6AC717022484BB600FD3740 /* Build configuration list for PBXNativeTarget "ARKitObjectTracker" */;
+			buildConfigurationList = A6AC71B4224975D900FD3740 /* Build configuration list for PBXNativeTarget "ARKitFlowerShop" */;
 			buildPhases = (
-				A6AC715822484BB500FD3740 /* Sources */,
-				A6AC715922484BB500FD3740 /* Frameworks */,
-				A6AC715A22484BB500FD3740 /* Resources */,
+				A6AC719C224975D800FD3740 /* Sources */,
+				A6AC719D224975D800FD3740 /* Frameworks */,
+				A6AC719E224975D800FD3740 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ARKitObjectTracker;
-			productName = ARKitObjectTracker;
-			productReference = A6AC715C22484BB500FD3740 /* ARKitObjectTracker.app */;
+			name = ARKitFlowerShop;
+			productName = ARKitFlowerShop;
+			productReference = A6AC71A0224975D800FD3740 /* ARKitFlowerShop.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A6AC715422484BB500FD3740 /* Project object */ = {
+		A6AC7198224975D800FD3740 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Giordano Scalzo";
 				TargetAttributes = {
-					A6AC715B22484BB500FD3740 = {
+					A6AC719F224975D800FD3740 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = A6AC715722484BB500FD3740 /* Build configuration list for PBXProject "ARKitObjectTracker" */;
+			buildConfigurationList = A6AC719B224975D800FD3740 /* Build configuration list for PBXProject "ARKitFlowerShop" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,56 +112,55 @@
 				en,
 				Base,
 			);
-			mainGroup = A6AC715322484BB500FD3740;
-			productRefGroup = A6AC715D22484BB500FD3740 /* Products */;
+			mainGroup = A6AC7197224975D800FD3740;
+			productRefGroup = A6AC71A1224975D800FD3740 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6AC715B22484BB500FD3740 /* ARKitObjectTracker */,
+				A6AC719F224975D800FD3740 /* ARKitFlowerShop */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A6AC715A22484BB500FD3740 /* Resources */ = {
+		A6AC719E224975D800FD3740 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AC716222484BB500FD3740 /* art.scnassets in Resources */,
-				A6AC716C22484BB600FD3740 /* LaunchScreen.storyboard in Resources */,
-				A6AC71742248526300FD3740 /* FlowerLabels.sks in Resources */,
-				A6AC716922484BB600FD3740 /* Assets.xcassets in Resources */,
-				A6AC716722484BB500FD3740 /* Main.storyboard in Resources */,
+				A6AC71A6224975D900FD3740 /* art.scnassets in Resources */,
+				A6AC71B0224975D900FD3740 /* LaunchScreen.storyboard in Resources */,
+				A6AC71AD224975D900FD3740 /* Assets.xcassets in Resources */,
+				A6AC71AB224975D900FD3740 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6AC715822484BB500FD3740 /* Sources */ = {
+		A6AC719C224975D800FD3740 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AC716422484BB500FD3740 /* ViewController.swift in Sources */,
-				A6AC716022484BB500FD3740 /* AppDelegate.swift in Sources */,
+				A6AC71A8224975D900FD3740 /* ViewController.swift in Sources */,
+				A6AC71A4224975D800FD3740 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A6AC716522484BB500FD3740 /* Main.storyboard */ = {
+		A6AC71A9224975D900FD3740 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6AC716622484BB500FD3740 /* Base */,
+				A6AC71AA224975D900FD3740 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A6AC716A22484BB600FD3740 /* LaunchScreen.storyboard */ = {
+		A6AC71AE224975D900FD3740 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6AC716B22484BB600FD3740 /* Base */,
+				A6AC71AF224975D900FD3740 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,7 +168,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A6AC716E22484BB600FD3740 /* Debug */ = {
+		A6AC71B2224975D900FD3740 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +229,7 @@
 			};
 			name = Debug;
 		};
-		A6AC716F22484BB600FD3740 /* Release */ = {
+		A6AC71B3224975D900FD3740 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -286,36 +284,36 @@
 			};
 			name = Release;
 		};
-		A6AC717122484BB600FD3740 /* Debug */ = {
+		A6AC71B5224975D900FD3740 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X6PHGF7Z3;
-				INFOPLIST_FILE = ARKitObjectTracker/Info.plist;
+				INFOPLIST_FILE = ARKitFlowerShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitObjectTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitFlowerShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A6AC717222484BB600FD3740 /* Release */ = {
+		A6AC71B6224975D900FD3740 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X6PHGF7Z3;
-				INFOPLIST_FILE = ARKitObjectTracker/Info.plist;
+				INFOPLIST_FILE = ARKitFlowerShop/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitObjectTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitFlowerShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6AC715722484BB500FD3740 /* Build configuration list for PBXProject "ARKitObjectTracker" */ = {
+		A6AC719B224975D800FD3740 /* Build configuration list for PBXProject "ARKitFlowerShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6AC716E22484BB600FD3740 /* Debug */,
-				A6AC716F22484BB600FD3740 /* Release */,
+				A6AC71B2224975D900FD3740 /* Debug */,
+				A6AC71B3224975D900FD3740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6AC717022484BB600FD3740 /* Build configuration list for PBXNativeTarget "ARKitObjectTracker" */ = {
+		A6AC71B4224975D900FD3740 /* Build configuration list for PBXNativeTarget "ARKitFlowerShop" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6AC717122484BB600FD3740 /* Debug */,
-				A6AC717222484BB600FD3740 /* Release */,
+				A6AC71B5224975D900FD3740 /* Debug */,
+				A6AC71B6224975D900FD3740 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A6AC715422484BB500FD3740 /* Project object */;
+	rootObject = A6AC7198224975D800FD3740 /* Project object */;
 }
