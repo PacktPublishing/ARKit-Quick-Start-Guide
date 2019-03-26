@@ -1,6 +1,6 @@
 //
 //  Wall.swift
-//  ARKitDartBoard
+//  ARKitDartboard
 //
 //  Created by Giordano Scalzo on 25/03/2019.
 //  Copyright © 2019 Giordano Scalzo. All rights reserved.

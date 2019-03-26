@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ARKitDartBoard
+//  ARKitDartboard
 //
 //  Created by Giordano Scalzo on 25/03/2019.
 //  Copyright © 2019 Giordano Scalzo. All rights reserved.
@@ -13,6 +13,7 @@ import ARKit
 class ViewController: UIViewController {
     @IBOutlet var sceneView: ARSCNView!
     let configuration = ARWorldTrackingConfiguration()
+    private var dartboardPlaced = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +42,10 @@ class ViewController: UIViewController {
 
     @objc
     func handleTap(sender: UITapGestureRecognizer) {
+        guard !dartboardPlaced else {
+            return
+        }
+
         let tapLocation = sender.location(in: sceneView)
         let hitTest = sceneView.hitTest(tapLocation, types: .existingPlaneUsingExtent)
         guard let firstHit = hitTest.first else {
@@ -53,32 +58,18 @@ class ViewController: UIViewController {
 
         let position = firstHit.worldTransform.position
         if let anchor = firstHit.anchor,
-            let node = sceneView.node(for: anchor) {
-            putTarget(at: position, eulerAngles: node.eulerAngles)
+            let wall = sceneView.node(for: anchor) {
+            let dartBoard = Dartboard(at: position, eulerAngles: wall.eulerAngles)
+            sceneView.scene.rootNode.addChildNode(dartBoard)
+            dartboardPlaced = true
         }
 
-        self.sceneView.scene.rootNode.enumerateChildNodes { (existingNode, _) in
-            if existingNode is Wall {
-                existingNode.removeFromParentNode()
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            if node is Wall {
+                node.parent?.removeFromParentNode()
             }
         }
     }
-
-    func putTarget(at position: SCNVector3, eulerAngles: SCNVector3) {
-
-        let planeGeometry = SCNPlane(width: 0.5, height: 0.5)
-        planeGeometry.cornerRadius = planeGeometry.width / 2
-        let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "target")
-        planeGeometry.materials = [material]
-
-        let node = SCNNode(geometry: planeGeometry)
-        node.position = position
-        node.eulerAngles = eulerAngles
-        node.eulerAngles.x = -.pi
-        sceneView.scene.rootNode.addChildNode(node)
-    }
-
 }
 
 // MARK: - ARSCNViewDelegate

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ARKitDartBoard.xcodeproj">
+      location = "self:/Users/giordanos/Dropbox/ARKIT2.0 Hands On/repo/ARKit-Quick-Start-Guide/Chapter-03-Detecting-Objects/ARKitDartBoard/ARKitDartboard.xcodeproj">
    </FileRef>
 </Workspace>
