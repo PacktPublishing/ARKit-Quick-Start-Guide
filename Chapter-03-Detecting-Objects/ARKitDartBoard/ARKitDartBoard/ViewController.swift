@@ -56,9 +56,9 @@ class ViewController: UIViewController {
         sceneView.session.run(configuration)
 
 
-        let position = firstHit.worldTransform.position
         if let anchor = firstHit.anchor,
             let wall = sceneView.node(for: anchor) {
+            let position = firstHit.worldTransform.position
             let dartBoard = Dartboard(at: position, eulerAngles: wall.eulerAngles)
             sceneView.scene.rootNode.addChildNode(dartBoard)
             dartboardPlaced = true
