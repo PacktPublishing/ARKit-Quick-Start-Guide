@@ -59,7 +59,7 @@ class ViewController: UIViewController {
 
             SCNTransaction.begin()
             SCNTransaction.animationDuration = 0.5
-            let rotation = SCNMatrix4MakeRotation(Float.pi / 4, 0.5, 0, 0)
+            let rotation = SCNMatrix4MakeRotation(Float.pi / 4, 1, 0, 0)
             ship.transform = SCNMatrix4Mult(ship.transform, rotation)
             let translation = SCNMatrix4MakeTranslation(0, 0, -1)
             ship.transform = SCNMatrix4Mult(ship.transform, translation)

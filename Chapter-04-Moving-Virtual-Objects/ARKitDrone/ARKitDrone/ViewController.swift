@@ -51,3 +51,27 @@ extension ViewController: ARSCNViewDelegate {
         print("Session interruption has ended.")
     }
 }
+
+
+extension ViewController {
+    @IBAction func altitudeValueChanged(_ sender: Any) {
+        guard let slider = sender as? UISlider else { return }
+        droneManager?.change(altitude: slider.value)
+    }
+
+    @IBAction func forwardButtonTapped(_ sender: Any) {
+        droneManager?.moveForward()
+    }
+
+    @IBAction func rightButtonTapped(_ sender: Any) {
+        droneManager?.moveRight()
+    }
+
+    @IBAction func reverseButtonTapped(_ sender: Any) {
+        droneManager?.moveReverse()
+    }
+
+    @IBAction func leftButtonTapped(_ sender: Any) {
+        droneManager?.moveLeft()
+    }
+}
