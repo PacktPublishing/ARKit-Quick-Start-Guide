@@ -25,7 +25,6 @@ class Dartboard: SCNNode {
         node.eulerAngles = eulerAngles
         node.eulerAngles.x = 0
 
-        // DA AGGIUNGERE
         let dartboardPhisicsShape = SCNPhysicsShape(geometry: planeGeometry, options: nil)
         node.physicsBody = SCNPhysicsBody(type: .static, shape: dartboardPhisicsShape)
         node.physicsBody?.isAffectedByGravity = false

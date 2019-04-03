@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         sceneView.scene = SCNScene()
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         sceneView.addGestureRecognizer(gestureRecognizer)
-        // DA AGGIUNGERE
+
         sceneView.scene.physicsWorld.contactDelegate = self
     }
 
@@ -77,16 +77,16 @@ class ViewController: UIViewController {
 
 private extension ViewController {
     func throwDart() {
-        
-        let dartsNode = Dart()
-        if let frame = self.sceneView.session.currentFrame {
-            let cameraTransform = SCNMatrix4(frame.camera.transform)
-            let dartDirection = SCNVector3(-1 * cameraTransform.m31, -1 * cameraTransform.m32, -1 * cameraTransform.m33)
-            dartsNode.position = SCNVector3(cameraTransform.m41, cameraTransform.m42, cameraTransform.m43)
-            dartsNode.physicsBody?.applyForce(dartDirection, asImpulse:
-                true)
-            sceneView.scene.rootNode.addChildNode(dartsNode)
+        guard let frame = self.sceneView.session.currentFrame else {
+            return
         }
+        let dartsNode = Dart()
+        let cameraTransform = SCNMatrix4(frame.camera.transform)
+        let dartDirection = SCNVector3(-1 * cameraTransform.m31, -1 * cameraTransform.m32, -1 * cameraTransform.m33)
+        dartsNode.position = SCNVector3(cameraTransform.m41, cameraTransform.m42, cameraTransform.m43)
+        dartsNode.physicsBody?.applyForce(dartDirection, asImpulse:
+            true)
+        sceneView.scene.rootNode.addChildNode(dartsNode)
     }
 }
 

@@ -16,6 +16,9 @@ class Dart: SCNNode {
         
         let sphere = SCNSphere(radius: 0.025)
         self.geometry = sphere
+        let material = SCNMaterial()
+        material.diffuse.contents = UIColor.red
+        self.geometry?.materials = [material]
 
         let shape = SCNPhysicsShape(geometry: sphere, options: nil)
 
@@ -23,10 +26,6 @@ class Dart: SCNNode {
         physicsBody?.isAffectedByGravity = false
         physicsBody?.categoryBitMask = CollisionCategory.dart.rawValue
         physicsBody?.contactTestBitMask = CollisionCategory.dartboard.rawValue
-
-        let material = SCNMaterial()
-        material.diffuse.contents = UIColor.red
-        self.geometry?.materials = [material]
 
         let waitAction = SCNAction.wait(duration: 4)
         let destroyAction = SCNAction.run { $0.removeFromParentNode() }
