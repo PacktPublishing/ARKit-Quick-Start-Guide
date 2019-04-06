@@ -31,12 +31,14 @@ class ViewController: UIViewController {
 
         sceneView.addGestureRecognizer(
             UITapGestureRecognizer(target: self,
-                                   action: #selector(viewTapped)))
+                                   action: #selector(viewTappedReflective)))
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let configuration = ARWorldTrackingConfiguration()
+        configuration.environmentTexturing = ARWorldTrackingConfiguration.EnvironmentTexturing.automatic
+
         configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
     }
@@ -44,6 +46,39 @@ class ViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
+    }
+
+    @objc
+    private func viewTappedReflective(_ gesture: UITapGestureRecognizer) {
+        let hit = sceneView.hitTest(screenCenter, types: .existingPlane)
+        guard let transform = hit.first?.worldTransform else {
+            return
+        }
+        let position = SCNVector3(transform.columns.3.x,
+                                  transform.columns.3.y + 0.10,
+                                  transform.columns.3.z)
+
+        let sphere = SCNSphere(radius: 0.05)
+
+        let material = SCNMaterial()
+        material.lightingModel = .physicallyBased
+        material.metalness.contents = 1.0
+        material.roughness.contents = 0
+
+        sphere.materials = [material]
+
+        let sphereNode = SCNNode(geometry: sphere)
+        sphereNode.position = position
+        sceneView.scene.rootNode.addChildNode(sphereNode)
+
+        // Animate the sphere
+        let moveLeft = SCNAction.moveBy(x: 0.18, y: 0, z: 0, duration: 1)
+        moveLeft.timingMode = .easeInEaseOut;
+        let moveRight = SCNAction.moveBy(x: -0.18, y: 0, z: 0, duration: 1)
+        moveRight.timingMode = .easeInEaseOut;
+        let moveSequence = SCNAction.sequence([moveLeft, moveRight])
+        let moveLoop = SCNAction.repeatForever(moveSequence)
+        sphereNode.runAction(moveLoop)
     }
 
     @objc
