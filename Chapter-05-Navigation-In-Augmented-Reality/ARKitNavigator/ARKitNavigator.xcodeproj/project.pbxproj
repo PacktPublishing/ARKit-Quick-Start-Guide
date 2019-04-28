@@ -13,6 +13,16 @@
 		A69605E92270BA660008D3F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69605E72270BA660008D3F6 /* Main.storyboard */; };
 		A69605EB2270BA670008D3F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69605EA2270BA670008D3F6 /* Assets.xcassets */; };
 		A69605EE2270BA670008D3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A69605EC2270BA670008D3F6 /* LaunchScreen.storyboard */; };
+		A69605FA2272113E0008D3F6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69605F92272113E0008D3F6 /* MapViewController.swift */; };
+		A69605FC2272EE720008D3F6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69605FB2272EE720008D3F6 /* LocationService.swift */; };
+		A6960602227331E00008D3F6 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69605FD227331E00008D3F6 /* Double+Extension.swift */; };
+		A6960603227331E00008D3F6 /* Matrix+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69605FE227331E00008D3F6 /* Matrix+Extension.swift */; };
+		A6960604227331E00008D3F6 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69605FF227331E00008D3F6 /* CLLocationCoordinate2D+Extension.swift */; };
+		A6960605227331E00008D3F6 /* MKMultiPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6960600227331E00008D3F6 /* MKMultiPoint+Extension.swift */; };
+		A6960606227331E00008D3F6 /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6960601227331E00008D3F6 /* CLLocation+Extension.swift */; };
+		A6960608227332780008D3F6 /* NavigationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6960607227332770008D3F6 /* NavigationService.swift */; };
+		A696060D227332BF0008D3F6 /* DirectionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696060C227332BF0008D3F6 /* DirectionNode.swift */; };
+		A696060F227332C60008D3F6 /* MKOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A696060E227332C60008D3F6 /* MKOverlays.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		A69605EA2270BA670008D3F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A69605ED2270BA670008D3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A69605EF2270BA670008D3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A69605F92272113E0008D3F6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A69605FB2272EE720008D3F6 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A69605FD227331E00008D3F6 /* Double+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		A69605FE227331E00008D3F6 /* Matrix+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Matrix+Extension.swift"; sourceTree = "<group>"; };
+		A69605FF227331E00008D3F6 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
+		A6960600227331E00008D3F6 /* MKMultiPoint+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKMultiPoint+Extension.swift"; sourceTree = "<group>"; };
+		A6960601227331E00008D3F6 /* CLLocation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		A6960607227332770008D3F6 /* NavigationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationService.swift; sourceTree = "<group>"; };
+		A696060C227332BF0008D3F6 /* DirectionNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionNode.swift; sourceTree = "<group>"; };
+		A696060E227332C60008D3F6 /* MKOverlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKOverlays.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +76,57 @@
 		A69605E02270BA660008D3F6 /* ARKitNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				A69605F5227210E80008D3F6 /* Extension */,
+				A69605F6227210F40008D3F6 /* Controller */,
+				A69605F7227210FB0008D3F6 /* Model */,
+				A69605F8227211020008D3F6 /* Service */,
 				A69605E12270BA660008D3F6 /* AppDelegate.swift */,
 				A69605E32270BA660008D3F6 /* art.scnassets */,
-				A69605E52270BA660008D3F6 /* ViewController.swift */,
 				A69605E72270BA660008D3F6 /* Main.storyboard */,
 				A69605EA2270BA670008D3F6 /* Assets.xcassets */,
 				A69605EC2270BA670008D3F6 /* LaunchScreen.storyboard */,
 				A69605EF2270BA670008D3F6 /* Info.plist */,
 			);
 			path = ARKitNavigator;
+			sourceTree = "<group>";
+		};
+		A69605F5227210E80008D3F6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6960601227331E00008D3F6 /* CLLocation+Extension.swift */,
+				A69605FF227331E00008D3F6 /* CLLocationCoordinate2D+Extension.swift */,
+				A69605FD227331E00008D3F6 /* Double+Extension.swift */,
+				A69605FE227331E00008D3F6 /* Matrix+Extension.swift */,
+				A6960600227331E00008D3F6 /* MKMultiPoint+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A69605F6227210F40008D3F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A696060E227332C60008D3F6 /* MKOverlays.swift */,
+				A69605E52270BA660008D3F6 /* ViewController.swift */,
+				A69605F92272113E0008D3F6 /* MapViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A69605F7227210FB0008D3F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A696060C227332BF0008D3F6 /* DirectionNode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A69605F8227211020008D3F6 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A6960607227332770008D3F6 /* NavigationService.swift */,
+				A69605FB2272EE720008D3F6 /* LocationService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6960603227331E00008D3F6 /* Matrix+Extension.swift in Sources */,
+				A6960606227331E00008D3F6 /* CLLocation+Extension.swift in Sources */,
 				A69605E62270BA660008D3F6 /* ViewController.swift in Sources */,
+				A696060D227332BF0008D3F6 /* DirectionNode.swift in Sources */,
+				A696060F227332C60008D3F6 /* MKOverlays.swift in Sources */,
+				A6960604227331E00008D3F6 /* CLLocationCoordinate2D+Extension.swift in Sources */,
+				A69605FA2272113E0008D3F6 /* MapViewController.swift in Sources */,
+				A6960608227332780008D3F6 /* NavigationService.swift in Sources */,
+				A6960605227331E00008D3F6 /* MKMultiPoint+Extension.swift in Sources */,
+				A69605FC2272EE720008D3F6 /* LocationService.swift in Sources */,
+				A6960602227331E00008D3F6 /* Double+Extension.swift in Sources */,
 				A69605E22270BA660008D3F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
