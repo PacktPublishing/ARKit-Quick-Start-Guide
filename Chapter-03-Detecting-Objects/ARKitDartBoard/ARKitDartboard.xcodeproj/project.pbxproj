@@ -105,10 +105,11 @@
 				TargetAttributes = {
 					A6AC71C022497D5E00FD3740 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
-			buildConfigurationList = A6AC71BC22497D5E00FD3740 /* Build configuration list for PBXProject "ARKitDartboard" */;
+			buildConfigurationList = A6AC71BC22497D5E00FD3740 /* Build configuration list for PBXProject "ARKitDartBoard" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -303,7 +304,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitDartboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -321,7 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitDartboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -329,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6AC71BC22497D5E00FD3740 /* Build configuration list for PBXProject "ARKitDartboard" */ = {
+		A6AC71BC22497D5E00FD3740 /* Build configuration list for PBXProject "ARKitDartBoard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A6AC71D322497D5F00FD3740 /* Debug */,

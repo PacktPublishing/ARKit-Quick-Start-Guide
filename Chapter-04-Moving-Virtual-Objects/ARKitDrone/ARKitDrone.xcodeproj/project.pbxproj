@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A6AC713E2248423600FD3740 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC713D2248423600FD3740 /* AppDelegate.swift */; };
-		A6AC71402248423600FD3740 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC713F2248423600FD3740 /* art.scnassets */; };
-		A6AC71422248423600FD3740 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC71412248423600FD3740 /* ViewController.swift */; };
-		A6AC71452248423600FD3740 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71432248423600FD3740 /* Main.storyboard */; };
-		A6AC71472248423600FD3740 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71462248423600FD3740 /* Assets.xcassets */; };
-		A6AC714A2248423600FD3740 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6AC71482248423600FD3740 /* LaunchScreen.storyboard */; };
-		A6AC7152224842B500FD3740 /* Surface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AC7151224842B500FD3740 /* Surface.swift */; };
+		A64B1474227F8B0A007FE46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B1473227F8B0A007FE46C /* AppDelegate.swift */; };
+		A64B1476227F8B0B007FE46C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A64B1475227F8B0B007FE46C /* art.scnassets */; };
+		A64B1478227F8B0B007FE46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B1477227F8B0B007FE46C /* ViewController.swift */; };
+		A64B147B227F8B0B007FE46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64B1479227F8B0B007FE46C /* Main.storyboard */; };
+		A64B147D227F8B0C007FE46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64B147C227F8B0C007FE46C /* Assets.xcassets */; };
+		A64B1480227F8B0C007FE46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64B147E227F8B0C007FE46C /* LaunchScreen.storyboard */; };
+		A64B1488227F8B5F007FE46C /* DroneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B1487227F8B5F007FE46C /* DroneManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A6AC713A2248423600FD3740 /* ARKitFlatSurfaceDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitFlatSurfaceDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6AC713D2248423600FD3740 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6AC713F2248423600FD3740 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		A6AC71412248423600FD3740 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A6AC71442248423600FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A6AC71462248423600FD3740 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6AC71492248423600FD3740 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A6AC714B2248423600FD3740 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A6AC7151224842B500FD3740 /* Surface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surface.swift; sourceTree = "<group>"; };
+		A64B1470227F8B0A007FE46C /* ARKitDrone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDrone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64B1473227F8B0A007FE46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A64B1475227F8B0B007FE46C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A64B1477227F8B0B007FE46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A64B147A227F8B0B007FE46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A64B147C227F8B0C007FE46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A64B147F227F8B0C007FE46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A64B1481227F8B0C007FE46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64B1487227F8B5F007FE46C /* DroneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A6AC71372248423600FD3740 /* Frameworks */ = {
+		A64B146D227F8B0A007FE46C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +39,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A6AC71312248423600FD3740 = {
+		A64B1467227F8B0A007FE46C = {
 			isa = PBXGroup;
 			children = (
-				A6AC713C2248423600FD3740 /* ARKitFlatSurfaceDetector */,
-				A6AC713B2248423600FD3740 /* Products */,
+				A64B1472227F8B0A007FE46C /* ARKitDrone */,
+				A64B1471227F8B0A007FE46C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A6AC713B2248423600FD3740 /* Products */ = {
+		A64B1471227F8B0A007FE46C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A6AC713A2248423600FD3740 /* ARKitFlatSurfaceDetector.app */,
+				A64B1470227F8B0A007FE46C /* ARKitDrone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A6AC713C2248423600FD3740 /* ARKitFlatSurfaceDetector */ = {
+		A64B1472227F8B0A007FE46C /* ARKitDrone */ = {
 			isa = PBXGroup;
 			children = (
-				A6AC713D2248423600FD3740 /* AppDelegate.swift */,
-				A6AC713F2248423600FD3740 /* art.scnassets */,
-				A6AC71412248423600FD3740 /* ViewController.swift */,
-				A6AC71432248423600FD3740 /* Main.storyboard */,
-				A6AC71462248423600FD3740 /* Assets.xcassets */,
-				A6AC71482248423600FD3740 /* LaunchScreen.storyboard */,
-				A6AC714B2248423600FD3740 /* Info.plist */,
-				A6AC7151224842B500FD3740 /* Surface.swift */,
+				A64B1487227F8B5F007FE46C /* DroneManager.swift */,
+				A64B1473227F8B0A007FE46C /* AppDelegate.swift */,
+				A64B1475227F8B0B007FE46C /* art.scnassets */,
+				A64B1477227F8B0B007FE46C /* ViewController.swift */,
+				A64B1479227F8B0B007FE46C /* Main.storyboard */,
+				A64B147C227F8B0C007FE46C /* Assets.xcassets */,
+				A64B147E227F8B0C007FE46C /* LaunchScreen.storyboard */,
+				A64B1481227F8B0C007FE46C /* Info.plist */,
 			);
-			path = ARKitFlatSurfaceDetector;
+			path = ARKitDrone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A6AC71392248423600FD3740 /* ARKitFlatSurfaceDetector */ = {
+		A64B146F227F8B0A007FE46C /* ARKitDrone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6AC714E2248423600FD3740 /* Build configuration list for PBXNativeTarget "ARKitFlatSurfaceDetector" */;
+			buildConfigurationList = A64B1484227F8B0C007FE46C /* Build configuration list for PBXNativeTarget "ARKitDrone" */;
 			buildPhases = (
-				A6AC71362248423600FD3740 /* Sources */,
-				A6AC71372248423600FD3740 /* Frameworks */,
-				A6AC71382248423600FD3740 /* Resources */,
+				A64B146C227F8B0A007FE46C /* Sources */,
+				A64B146D227F8B0A007FE46C /* Frameworks */,
+				A64B146E227F8B0A007FE46C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ARKitFlatSurfaceDetector;
-			productName = ARKitFlatSurfaceDetector;
-			productReference = A6AC713A2248423600FD3740 /* ARKitFlatSurfaceDetector.app */;
+			name = ARKitDrone;
+			productName = ARKitDrone;
+			productReference = A64B1470227F8B0A007FE46C /* ARKitDrone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A6AC71322248423600FD3740 /* Project object */ = {
+		A64B1468227F8B0A007FE46C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Giordano Scalzo";
 				TargetAttributes = {
-					A6AC71392248423600FD3740 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1020;
+					A64B146F227F8B0A007FE46C = {
+						CreatedOnToolsVersion = 10.2;
 					};
 				};
 			};
-			buildConfigurationList = A6AC71352248423600FD3740 /* Build configuration list for PBXProject "ARKitFlatSurfaceDetector" */;
+			buildConfigurationList = A64B146B227F8B0A007FE46C /* Build configuration list for PBXProject "ARKitDrone" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,56 +113,56 @@
 				en,
 				Base,
 			);
-			mainGroup = A6AC71312248423600FD3740;
-			productRefGroup = A6AC713B2248423600FD3740 /* Products */;
+			mainGroup = A64B1467227F8B0A007FE46C;
+			productRefGroup = A64B1471227F8B0A007FE46C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A6AC71392248423600FD3740 /* ARKitFlatSurfaceDetector */,
+				A64B146F227F8B0A007FE46C /* ARKitDrone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A6AC71382248423600FD3740 /* Resources */ = {
+		A64B146E227F8B0A007FE46C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AC71402248423600FD3740 /* art.scnassets in Resources */,
-				A6AC714A2248423600FD3740 /* LaunchScreen.storyboard in Resources */,
-				A6AC71472248423600FD3740 /* Assets.xcassets in Resources */,
-				A6AC71452248423600FD3740 /* Main.storyboard in Resources */,
+				A64B1476227F8B0B007FE46C /* art.scnassets in Resources */,
+				A64B1480227F8B0C007FE46C /* LaunchScreen.storyboard in Resources */,
+				A64B147D227F8B0C007FE46C /* Assets.xcassets in Resources */,
+				A64B147B227F8B0B007FE46C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A6AC71362248423600FD3740 /* Sources */ = {
+		A64B146C227F8B0A007FE46C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6AC71422248423600FD3740 /* ViewController.swift in Sources */,
-				A6AC7152224842B500FD3740 /* Surface.swift in Sources */,
-				A6AC713E2248423600FD3740 /* AppDelegate.swift in Sources */,
+				A64B1488227F8B5F007FE46C /* DroneManager.swift in Sources */,
+				A64B1478227F8B0B007FE46C /* ViewController.swift in Sources */,
+				A64B1474227F8B0A007FE46C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A6AC71432248423600FD3740 /* Main.storyboard */ = {
+		A64B1479227F8B0B007FE46C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6AC71442248423600FD3740 /* Base */,
+				A64B147A227F8B0B007FE46C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A6AC71482248423600FD3740 /* LaunchScreen.storyboard */ = {
+		A64B147E227F8B0C007FE46C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A6AC71492248423600FD3740 /* Base */,
+				A64B147F227F8B0C007FE46C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +170,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A6AC714C2248423600FD3740 /* Debug */ = {
+		A64B1482227F8B0C007FE46C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -232,7 +231,7 @@
 			};
 			name = Debug;
 		};
-		A6AC714D2248423600FD3740 /* Release */ = {
+		A64B1483227F8B0C007FE46C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,7 +276,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,36 +286,36 @@
 			};
 			name = Release;
 		};
-		A6AC714F2248423600FD3740 /* Debug */ = {
+		A64B1485227F8B0C007FE46C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X6PHGF7Z3;
-				INFOPLIST_FILE = ARKitFlatSurfaceDetector/Info.plist;
+				INFOPLIST_FILE = ARKitDrone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitFlatSurfaceDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitDrone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A6AC71502248423600FD3740 /* Release */ = {
+		A64B1486227F8B0C007FE46C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X6PHGF7Z3;
-				INFOPLIST_FILE = ARKitFlatSurfaceDetector/Info.plist;
+				INFOPLIST_FILE = ARKitDrone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitFlatSurfaceDetector;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.effectivecode.ARKitDrone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,25 +325,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A6AC71352248423600FD3740 /* Build configuration list for PBXProject "ARKitFlatSurfaceDetector" */ = {
+		A64B146B227F8B0A007FE46C /* Build configuration list for PBXProject "ARKitDrone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6AC714C2248423600FD3740 /* Debug */,
-				A6AC714D2248423600FD3740 /* Release */,
+				A64B1482227F8B0C007FE46C /* Debug */,
+				A64B1483227F8B0C007FE46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A6AC714E2248423600FD3740 /* Build configuration list for PBXNativeTarget "ARKitFlatSurfaceDetector" */ = {
+		A64B1484227F8B0C007FE46C /* Build configuration list for PBXNativeTarget "ARKitDrone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6AC714F2248423600FD3740 /* Debug */,
-				A6AC71502248423600FD3740 /* Release */,
+				A64B1485227F8B0C007FE46C /* Debug */,
+				A64B1486227F8B0C007FE46C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A6AC71322248423600FD3740 /* Project object */;
+	rootObject = A64B1468227F8B0A007FE46C /* Project object */;
 }
